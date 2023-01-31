@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Você é Estrangeiro?</h1>
+    <p>Quantos anos você tem? <input type="text" name="txtnac" id="txtnac"></p>
+    <p>Digite o seu nome:  <input type="text" name="yname" id="yname"></p>
+    <input type="button" value="Enviar Informação" onclick="enviar()">
+    <div id="info">
+        
+    </div>
+
+    <script>
+        function enviar() {
+            let nacionalidade = window.document.querySelector('input#txtnac')
+            let res = window.document.querySelector('div#info')
+            let pais = nacionalidade.value.toLowerCase()
+            let mostrar = nacionalidade.value
+            let yname = window.document.querySelector('input#yname')
+            let outname = yname.value
+            res.innerHTML = `Olá ${outname}, Você tem ${mostrar} anos`
+            var d = 0
+            
+            while (d<mostrar){
+                re.innerHTML = `${d}Feliz aniversario ${outname}, Você tem ${mostrar} anos `
+            d++}
+
+
+        }
+
+
+
+    </script>
+
+</body>
+</html>
